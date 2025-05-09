@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stutter Report</title>
+    <!-- Повторение стилей с изменением цветовой схемы -->
+    <style>
+        :root {
+            --primary: #6D466B;
+            --secondary: #B49FCC;
+            --accent: #EAD7D7;
+            --text: #3A2E3A;
+            --background: #FFF8FE;
+        }
+
+        .news-card {
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <svg width="0" height="0">
+        <defs>
+            <pattern id="wave-pattern" width="100" height="100" patternUnits="userSpaceOnUse">
+                <path d="M0 50C20 0 40 100 60 50S100 0 100 50" stroke="var(--secondary)" fill="none" opacity="0.1"/>
+            </pattern>
+        </defs>
+    </svg>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="https://i.imgur.com/qNWQLeH.png" alt="Stutter Report" style="height: 40px">
+            </div>
+            <nav>
+                <a href="#latest">Свежее</a>
+                <a href="#politics">Политика</a>
+                <a href="#ads">Реклама</a>
+            </nav>
+        </header>
+
+        <section id="latest">
+            <article class="news-card">
+                <h3>Новые санкции против TrueSoft</h3>
+                <p>Парламент рассматривает дополнительные ограничения...</p>
+            </article>
+        </section>
+    </div>
+</body>
+</html>
